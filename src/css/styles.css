@@ -1,3 +1,53 @@
 body {
 	background-color: forestgreen;
 }
+
+.card {
+	font-size: 30px;
+	height: 14em;
+	width: 9em;
+	color: white;
+	background-color: white;
+	background-position: -220px;
+	border-radius: 1em;
+	position: relative;
+	background-image: url("https://news.nationalgeographic.com/content/dam/news/photos/000/755/75552.ngsversion.1422285553360.adapt.1900.1.jpg");
+	background-size: cover;
+}
+
+.card__center-image {
+	width: 1em;
+	height: 1em;
+	margin-left: -0.5em;
+	margin-top: -0.5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 4em;
+	text-align: center;
+}
+.card__center-image::after {
+	content: '♠︎';
+}
+
+.card__identifier {
+	position: absolute;
+}
+.card__identifier--top {
+	top: 0.3em;
+	left: 0.5em;
+}
+.card__identifier--bottom {
+	bottom: 0.3em;
+	right: 0.5em;
+	transform: rotate(180deg);
+}
+
+.card__identifier-suit::after {
+	content: '♠︎';
+}
+.card__identifier-number::after {
+	content: 'A';
+}
+
+.card__identifier-number
